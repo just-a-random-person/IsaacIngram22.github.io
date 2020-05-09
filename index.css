@@ -40,14 +40,15 @@ body {
 #heading {
   text-align: left;
   font-size: 44px;
-  margin-left: 100px;
+  margin-left: 10%;
+  width: 80%;
 }
 
 #aboutMe {
   text-align: left;
   font-size: 20px;
-  width: 1000px;
-  margin-left: 100px;
+  width: 80%;
+  margin-left: 10%;
 }
 
 .link {

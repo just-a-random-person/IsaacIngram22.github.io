@@ -96,3 +96,10 @@ body {
   margin-left: 8%;
   color: black;
 }
+
+#openSourceNotice {
+  text-align: center;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+}

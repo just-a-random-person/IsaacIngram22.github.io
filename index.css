@@ -9,9 +9,9 @@ body {
   height: 100vh;
   color: #fff;
   background: linear-gradient(20deg, #ee7752, #e73c7e, #23a6d5, #23d5ab );
-  background-size: 400% 400%;
+  background-size: 200% 200%;
   -webkit-animation: gradientBG 10s ease infinite;
-  animation: gradientBG 30s ease infinite;
+  animation: gradientBG 20s ease infinite;
 }
 
 @-webkit-keyframes gradientBG {
@@ -37,6 +37,13 @@ body {
   }
 }
 
+.fixed {
+  position: fixed;
+  top: 72px;
+  left: 0;
+  width: 100%;
+}
+
 #heading {
   text-align: left;
   font-size: 44px;
@@ -44,13 +51,48 @@ body {
   width: 80%;
 }
 
-#aboutMe {
+.aboutMeWhite {
   text-align: left;
   font-size: 20px;
   width: 80%;
   margin-left: 10%;
+  color: white;
 }
 
-.link {
+.aboutMeBlack {
+  text-align: left;
+  font-size: 20px;
+  width: 80%;
+  margin-left: 8%;
+  color: black;
+}
+
+.linkWhite {
   color: white;
+}
+
+.linkBlack {
+  color: black;
+}
+
+.main {
+  position: absolute;
+  top: 100vh;
+  background-color: #fff;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 72px 30px 30px;
+  color: #000;
+  z-index: 30;
+  -webkit-transition: -webkit-transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out;
+  overflow: hidden;
+}
+
+#moreAboutMeHeader {
+  text-align: left;
+  font-size: 30px;
+  width: 80%;
+  margin-left: 8%;
+  color: black;
 }

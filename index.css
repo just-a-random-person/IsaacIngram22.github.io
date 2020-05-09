@@ -4,15 +4,22 @@ h1, h2, h3, h4, p {
 }
 
 body {
-  background-color: black;
+  background-color: #000000;
 }
 
 #heading {
-  text-align: center;
-  font-size: 45px;
+  text-align: left;
+  font-size: 44px;
+  margin-left: 100px;
 }
 
-#construction {
-  text-align: center;
-  font-size: 25px;
+#aboutMe {
+  text-align: left;
+  font-size: 20px;
+  width: 1000px;
+  margin-left: 100px;
+}
+
+.link {
+  color: white;
 }

@@ -51,7 +51,7 @@ body {
   width: 80%;
 }
 
-.aboutMeWhite {
+.topAboutMe {
   text-align: left;
   font-size: 20px;
   width: 80%;
@@ -59,47 +59,117 @@ body {
   color: white;
 }
 
-.aboutMeBlack {
-  text-align: left;
-  font-size: 20px;
-  width: 80%;
-  margin-left: 8%;
-  color: black;
-}
-
-.linkWhite {
+.topLink {
   color: white;
 }
 
-.linkBlack {
-  color: black;
+@media (prefers-color-scheme: light) {
+
+  .aboutMeWhite {
+    text-align: left;
+    font-size: 20px;
+    width: 80%;
+    margin-left: 10%;
+    color: white;
+  }
+
+  .aboutMeBlack {
+    text-align: left;
+    font-size: 20px;
+    width: 80%;
+    margin-left: 8%;
+    color: black;
+  }
+
+  .linkWhite {
+    color: white;
+  }
+
+  .linkBlack {
+    color: black;
+  }
+
+  .main {
+    position: absolute;
+    top: 100vh;
+    background-color: #fff;
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 72px 30px 30px;
+    color: #000;
+    z-index: 30;
+    -webkit-transition: -webkit-transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out;
+    overflow: hidden;
+  }
+
+  #moreAboutMeHeader {
+    text-align: left;
+    font-size: 30px;
+    width: 80%;
+    margin-left: 8%;
+    color: black;
+  }
+
+  #openSourceNotice {
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+  }
 }
 
-.main {
-  position: absolute;
-  top: 100vh;
-  background-color: #fff;
-  width: 100vw;
-  box-sizing: border-box;
-  padding: 72px 30px 30px;
-  color: #000;
-  z-index: 30;
-  -webkit-transition: -webkit-transform 0.6s ease-in-out;
-  transition: transform 0.6s ease-in-out;
-  overflow: hidden;
-}
+@media (prefers-color-scheme: dark) {
+  .aboutMeWhite {
+    text-align: left;
+    font-size: 20px;
+    width: 80%;
+    margin-left: 10%;
+    color: black;
+  }
 
-#moreAboutMeHeader {
-  text-align: left;
-  font-size: 30px;
-  width: 80%;
-  margin-left: 8%;
-  color: black;
-}
+  .aboutMeBlack {
+    text-align: left;
+    font-size: 20px;
+    width: 80%;
+    margin-left: 8%;
+    color: white;
+  }
 
-#openSourceNotice {
-  text-align: center;
-  color: black;
-  font-size: 15px;
-  font-weight: bold;
+  .linkWhite {
+    color: black;
+  }
+
+  .linkBlack {
+    color: white;
+  }
+
+  .main {
+    position: absolute;
+    top: 100vh;
+    background-color: black;
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 72px 30px 30px;
+    color: #000;
+    z-index: 30;
+    -webkit-transition: -webkit-transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out;
+    overflow: hidden;
+  }
+
+  #moreAboutMeHeader {
+    text-align: left;
+    font-size: 30px;
+    width: 80%;
+    margin-left: 8%;
+    color: white;
+  }
+
+  #openSourceNotice {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+  }
 }
